@@ -1,0 +1,147 @@
+/* src/games/MemoryGame/MemoryGame.css */
+.memory-game {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.memory-game .game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #1e293b;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.memory-game .back-button {
+  background: #0066FF;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.memory-game .back-button:hover {
+  background: #0052cc;
+}
+
+.memory-game h2 {
+  color: #f8fafc;
+}
+
+.memory-game .game-info {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #1e293b;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.memory-game .stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #FF6B35;
+}
+
+.memory-game .win-message {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.card {
+  aspect-ratio: 3/4;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card-front {
+  background: linear-gradient(135deg, #0066FF, #0052cc);
+  color: white;
+  border: 2px solid #0066FF;
+}
+
+.card-back {
+  background: linear-gradient(135deg, #FF6B35, #e55a2b);
+  color: white;
+  transform: rotateY(180deg);
+  border: 2px solid #FF6B35;
+}
+
+.card.solved .card-back {
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-color: #10b981;
+}
+
+.memory-game .reset-button {
+  width: 100%;
+  background: #FF6B35;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.memory-game .reset-button:hover {
+  background: #e55a2b;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  
+  .card-front, .card-back {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,92 @@
+/* src/games/TicTacToe/TicTacToe.css */
+.tic-tac-toe {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.tic-tac-toe .game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #1e293b;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.tic-tac-toe .back-button {
+  background: #0066FF;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tic-tac-toe .back-button:hover {
+  background: #0052cc;
+}
+
+.tic-tac-toe h2 {
+  color: #f8fafc;
+}
+
+.tic-tac-toe .game-info {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #1e293b;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.tic-tac-toe .status {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #FF6B35;
+}
+
+.tic-tac-toe .board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 2rem;
+  background: #334155;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.tic-tac-toe .square {
+  aspect-ratio: 1;
+  background: #1e293b;
+  border: 2px solid #475569;
+  border-radius: 8px;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #f8fafc;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tic-tac-toe .square:hover {
+  background: #334155;
+  border-color: #0066FF;
+}
+
+.tic-tac-toe .reset-button {
+  width: 100%;
+  background: #FF6B35;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tic-tac-toe .reset-button:hover {
+  background: #e55a2b;
+}
