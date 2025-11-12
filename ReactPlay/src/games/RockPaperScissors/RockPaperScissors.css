@@ -1,0 +1,277 @@
+/* src/games/RockPaperScissors/RockPaperScissors.css */
+.rock-paper-scissors {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.rock-paper-scissors .game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #1e293b;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.rock-paper-scissors .back-button {
+  background: #0066FF;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.rock-paper-scissors .back-button:hover {
+  background: #0052cc;
+}
+
+.rock-paper-scissors h2 {
+  color: #f8fafc;
+}
+
+.rock-paper-scissors .game-info {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #1e293b;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.score {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.player-score {
+  background: linear-gradient(135deg, #10b98120, #10b981);
+  color: white;
+}
+
+.computer-score {
+  background: linear-gradient(135deg, #ef444420, #ef4444);
+  color: white;
+}
+
+.ties {
+  background: linear-gradient(135deg, #f59e0b20, #f59e0b);
+  color: white;
+}
+
+.result {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.result.win {
+  background: linear-gradient(135deg, #10b98120, #10b981);
+  color: #10b981;
+  border: 2px solid #10b981;
+}
+
+.result.lose {
+  background: linear-gradient(135deg, #ef444420, #ef4444);
+  color: #ef4444;
+  border: 2px solid #ef4444;
+}
+
+.result.tie {
+  background: linear-gradient(135deg, #f59e0b20, #f59e0b);
+  color: #f59e0b;
+  border: 2px solid #f59e0b;
+}
+
+.choices-section {
+  margin-bottom: 2rem;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.choice-btn {
+  background: #1e293b;
+  border: 3px solid #334155;
+  border-radius: 16px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.choice-btn:hover {
+  transform: translateY(-5px);
+  border-color: #0066FF;
+  box-shadow: 0 10px 25px rgba(0, 102, 255, 0.2);
+}
+
+.choice-btn.selected {
+  border-color: #FF6B35;
+  background: #FF6B3520;
+  transform: scale(1.05);
+}
+
+.choice-emoji {
+  font-size: 2.5rem;
+}
+
+.choice-name {
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.battle-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #334155;
+  padding: 2rem;
+  border-radius: 16px;
+  margin-top: 1rem;
+}
+
+.choice-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.choice-emoji-large {
+  font-size: 4rem;
+}
+
+.vs {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #FF6B35;
+  background: #1e293b;
+  padding: 1rem 2rem;
+  border-radius: 50%;
+}
+
+.game-history {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #334155;
+}
+
+.game-history h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #f8fafc;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: #334155;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.history-result.player {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.history-result.computer {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.history-result.tie {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.reset-button, .reset-score-button {
+  flex: 1;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-button {
+  background: #FF6B35;
+  color: white;
+}
+
+.reset-button:hover {
+  background: #e55a2b;
+}
+
+.reset-score-button {
+  background: #64748b;
+  color: white;
+}
+
+.reset-score-button:hover {
+  background: #475569;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .choices {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .choice-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .battle-area {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+}
