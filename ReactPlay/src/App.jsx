@@ -1,6 +1,6 @@
 // src/App.jsx
 import './App.css'
-import GameHub from './components/Gamehub'
+import GameHub from './components/GameHub'
 
 function App() {
   return (

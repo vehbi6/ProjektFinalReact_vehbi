@@ -32,9 +32,9 @@ function GameMenu({ onSelectGame }) {
     },
     { 
       id: 'rps', 
-      name: 'Rock Paper Scissors', 
-      emoji: '✂️',
-      description: 'The ultimate hand game showdown',
+      name: 'FlappyBird', 
+      emoji: '🐤',
+      description: 'Fly the bird through obstacles',
       color: '#10b981',
       bgColor: 'linear-gradient(135deg, #10b98120, #10b98140)',
       comingSoon: false

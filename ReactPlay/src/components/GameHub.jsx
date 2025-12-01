@@ -3,7 +3,7 @@ import { useState } from 'react'
 import GameMenu from './GameMenu'
 import TicTacToe from '../games/TicTacToe/TicTacToe'
 import MemoryGame from '../games/MemoryGame/MemoryGame'
-import RockPaperScissors from '../games/RockPaperScissors/RockPaperScissors'
+import RockPaperScissors from '../games/FlappyBird/FlappyBird'
 import Hangman from '../games/Hangman/Hangman'
 import SnakeGame from '../games/SnakeGame/SnakeGame' // ← Add this import
 
